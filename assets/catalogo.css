@@ -1,0 +1,76 @@
+/* CATALOGO PAGE SPECIFIC STYLES */
+.catalogo-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.catalogo-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.catalogo-item:hover {
+    transform: translateY(-5px);
+}
+
+.catalogo-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.catalogo-info {
+    padding: 20px;
+}
+
+.catalogo-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #6E4121;
+}
+
+.catalogo-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6E4121;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    width: 100%;
+    padding: 12px;
+    background-color: #A46131;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #165a3e;
+}
+
+@media (max-width: 800px) {
+    .catalogo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
