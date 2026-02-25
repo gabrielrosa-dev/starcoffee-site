@@ -74,6 +74,10 @@ nav a:hover {
     margin-right: auto;
 }
 
+.intro-bloco {
+    height: 250px;
+}
+
 .bloco:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
@@ -196,9 +200,8 @@ button {
 footer {
     background: #663C1F;
     color: white;
-    padding: 40px 20px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 100px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -223,4 +226,297 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* BOTÃO FLUTUANTE */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #895129;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.floating-btn:hover {
+    background: #663C1F;
+    width: 280px;
+    border-radius: 30px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.btn-text {
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.floating-btn:hover .btn-text {
+    opacity: 1;
+}
+
+/* BACK LINK */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #895129;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.back-link:hover {
+    background: #663C1F;
+}
+
+/* POST LIST */
+.post-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.post-list li {
+    margin-bottom: 10px;
+}
+
+.post-list a {
+    color: #895129;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.post-list a:hover {
+    color: #663C1F;
+    text-decoration: underline;
+}
+
+/* PODCAST BUTTON */
+.podcast-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: white;
+    color: #895129;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #895129;
+}
+
+.podcast-btn:hover {
+    background: #895129;
+    color: white;
+}
+
+/* POSTS SLIDER */
+.posts-slider {
+    position: relative;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.posts-container {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    transition: transform 0.5s ease;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(137, 81, 41, 0.8);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7;
+}
+
+.slider-arrow:hover {
+    background: rgba(102, 60, 31, 0.9);
+    opacity: 1;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.post-card {
+    min-width: 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.post-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-content h2 {
+    color: #895129;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.post-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* MEDIA ELEMENTS */
+video, audio {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+audio {
+    margin: 10px 0;
+}
+
+/* VIDEO SECTION */
+.video-section {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px 20px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-section h2 {
+    color: #895129;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.video-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.video-section video {
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* EPISODES SECTION */
+.episodes-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.episodes-section h2 {
+    text-align: center;
+    color: #895129;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.episode-card {
+    display: flex;
+    background: linear-gradient(135deg, #f9f9f9 0%, #e8e8e8 100%);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.episode-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.episode-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.episode-image {
+    flex: 1;
+    position: relative;
+}
+
+.episode-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.episode-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.episode-content h3 {
+    color: #895129;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.episode-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.episode-content audio {
+    margin-top: auto;
 }
