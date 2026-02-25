@@ -1,0 +1,211 @@
+/* RESPONSIVO PARA TABLETS E CELULARES */
+
+/* Para tablets (até 800px) */
+@media (max-width: 800px) {
+    .bloco {
+        flex-direction: column;
+        height: auto;
+        margin: 20px 10px;
+    }
+
+    .imagem {
+        height: 250px;
+    }
+
+    .contato-info {
+        grid-template-columns: 1fr;
+    }
+
+    .posts-slider {
+        padding: 0 10px;
+    }
+
+    .post-card {
+        min-width: 250px;
+    }
+
+    .video-section {
+        padding: 20px 10px;
+    }
+
+    .video-section video {
+        height: 300px;
+    }
+
+    .episodes-section {
+        padding: 0 10px;
+    }
+
+    .episode-card {
+        flex-direction: column !important;
+    }
+
+    .episode-image img {
+        height: 200px;
+    }
+
+    .episode-content {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* Para celulares (até 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    .bloco {
+        margin: 5px 5px;
+    }
+
+    .texto {
+        padding: 10px;
+    }
+
+    .texto h1 {
+        font-size: 20px;
+    }
+
+    .texto p {
+        font-size: 14px;
+    }
+
+    .imagem {
+        height: 80px;
+    }
+
+    .post-card img {
+        height: 120px;
+    }
+
+    .video-section video {
+        height: 180px;
+    }
+
+    .episode-image img {
+        height: 150px;
+    }
+
+    .texto h1 {
+        font-size: 28px;
+    }
+
+    .texto p {
+        font-size: 16px;
+    }
+
+    .posts-slider {
+        padding: 0 5px;
+    }
+
+    .post-card {
+        min-width: 200px;
+    }
+
+    .post-content h2 {
+        font-size: 20px;
+    }
+
+    .posts-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .posts-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slider-arrow {
+        display: none;
+    }
+
+    .floating-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .floating-btn:hover {
+        width: 220px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    .btn-text {
+        font-size: 14px;
+    }
+
+    .video-section {
+        padding: 15px 5px;
+    }
+
+    .video-section h2 {
+        font-size: 24px;
+    }
+
+    .video-section video {
+        height: 250px;
+    }
+
+    .episodes-section h2 {
+        font-size: 28px;
+    }
+
+    .episode-card {
+        margin-bottom: 20px;
+    }
+
+    .episode-content h3 {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}

@@ -180,22 +180,6 @@ button {
     color: white;
 }
 
-/* RESPONSIVO */
-@media (max-width: 800px) {
-    .bloco {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .imagem {
-        height: 300px;
-    }
-
-    .contato-info {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* FOOTER */
 footer {
     background: #663C1F;
