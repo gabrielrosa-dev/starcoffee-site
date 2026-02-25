@@ -19,6 +19,6 @@ Clique no link abaixo para visualizar o site online:
 
 🛠️ Tecnologias utilizadas
 
-HTML5
-CSS3
-GitHub Pages
+- HTML5
+- CSS3
+- GitHub Pages
